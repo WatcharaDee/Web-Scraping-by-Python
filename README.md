@@ -9,6 +9,14 @@ Note: Actually I tried to use the python apscheduler library to create the sched
 Anyway, I'm welcome to share my source code to the public. Any feedback or suggestion, please let me know.
 Finally, I wrote this program for the education purpose only. I don't have intention to scrape the data from this website to any commercial benefit.
 
-Note: Due to this program is to connect to the MySQL Database. So you have to install the mySQL database on you computer first. Then you need to create the database and table as following script.
+Note: Due to this program is to connect to the MySQL Database. So you have to install the mySQL database on you computer first. Then you need to create the database and table as following script so that you can run the python script.
 
+CREATE TABLE `restaurant` (
+  `restaurant_id` int(11) NOT NULL AUTO_INCREMENT,
+  `restaurant_name` varchar(150) DEFAULT NULL,
+  `restaurant_location` varchar(150) DEFAULT NULL,
+  `bookings` varchar(100) DEFAULT NULL,
+  `scrape_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`restaurant_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
 
